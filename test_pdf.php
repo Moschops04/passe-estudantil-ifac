@@ -1,0 +1,1 @@
+<?php require "src/pdf.php"; $aluno = ["nome" => "Paulo", "curso" => "Sistemas", "matricula" => "123", "semestre" => 8]; try { echo gerar_pdf_declaracao($aluno, "IFAC-TEST-123"); } catch (Throwable $e) { echo $e->getMessage(); }
